@@ -1,0 +1,126 @@
+@padding: 50px 10% 0px 10%;
+@grey: #B2B2AC;
+@blue: #465479;
+@border: 1px solid #979797 !important;
+@mobileHeader: 28px;
+
+
+.autoWrapper {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 400px;
+  height: auto;
+  padding-right: 25px;
+}
+
+.autoRow {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  min-height: 56px;
+}
+
+.autoBox {
+  min-height: 56px;
+  max-height: 150px;
+  font-size: 20px;
+  border: @border;
+  box-sizing: border-box;
+  overflow-y: auto;
+  padding: 10px;
+  margin: 0px 5px 0px 0px;
+  &::placeholder {
+    color: @grey;
+    font-size: 20px;
+  }
+}
+.acList {
+  width: 272px;
+  max-height: 300px;
+  max-width: 100%;
+  background: white;
+  position: absolute;
+  display: block;
+  list-style: none;
+  top: 100%;
+  border: @border;
+  padding-left: 0px;
+  z-index: 9999;
+  box-shadow: 0 1px 0 rgba(0,0,0,.06);
+  
+  > li {
+    padding: 5px;
+  }
+}
+
+.activeItem {
+  color: white;
+  background: @blue;
+}
+
+.instructions {
+  color: @grey;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+/* important styles because component has defaults... */
+.input {
+  min-height: 56px;
+  height: 56px;
+  font-size: 20px !important;
+  border: @border;
+  padding: 10px !important;
+  margin: 0px 5px 0px 0px;
+  &::placeholder {
+    color: @grey;
+    font-size: 20px;
+  }
+}
+
+.percent {
+  position: absolute;
+  font-size: 20px;
+  left: 100%;
+  color: @grey;
+  min-height: 56px;
+  width: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.mInput {
+  font-size: 20px;
+  height: 30px;
+}
+
+.mSelect {
+  text-transform: none;
+  font-size: 14px;
+}
+
+.selectHandler {
+  font-size: 14px;
+}
+
+.mPlaceholder {
+  color: @grey;
+}
+
+.rowItem {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.valueItem {
+  display: flex;
+  align-items: center;
+}
