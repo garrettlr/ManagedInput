@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AutoComplete } from '../components';
+
 const airlines = [
   'United Airlines',
   'American Airlines',
@@ -30,7 +30,7 @@ const AirlineProvider = Child => {
 
     render() {
       return (
-        <AutoComplete 
+        <Child 
           fetchItems={fetchAirlines}
           handleSelection={selections => this.setState({ selections })}
           handleErr={this.handleErr}

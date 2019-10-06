@@ -6,7 +6,7 @@ import { ConditionalRenderer } from '../index.js';
 
 /**
 * creates a faux input box that allows controlled multiple entries in a single input
-* should be rendered inside a HOC, see modals/PassengersInput.js for example.
+* should be rendered inside a HOC or Wrapper class.
 * @name {Class} ManagedSelect
 * */
 export default class ManagedSelect extends Component {

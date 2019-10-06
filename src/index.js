@@ -1,7 +1,7 @@
 import React from 'react';
 import AirlineAutoCompleteProvider from './containers/AirlineAutoCompleteProvider';
 import ReactDOM from 'react-dom';
-
+import { AutoComplete } from './components';
 
 // renders the react app
 const render = Component => {
@@ -11,4 +11,4 @@ const render = Component => {
   );
 }
 
-render(AirlineAutoCompleteProvider());
+render(AirlineAutoCompleteProvider(AutoComplete));

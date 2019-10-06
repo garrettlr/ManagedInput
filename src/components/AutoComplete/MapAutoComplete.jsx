@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import AutoCompleteItem from './AutoCompleteItem.jsx';
 
 const MapAutoComplete = ({ items, handleClick, handleMouseOver, activeIdx, }) => items.map((item, idx) =>
